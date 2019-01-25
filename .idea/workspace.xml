@@ -2,97 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77256ad5-fa91-49f3-9138-64ef0e96c6ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COPYING" beforeDir="false" afterPath="$PROJECT_DIR$/COPYING" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/activity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/cities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/delivery.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/delivery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/explain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/hongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/hongbao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/payments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/rate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitData/remark.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/remark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/admin/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/member/vipcart.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/member/vipcart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/promotion/hongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/promotion/hongbao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/shopping/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/shopping/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/shopping/food.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/shopping/food.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/shopping/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/shopping/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/statis/statis.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/statis/statis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/ugc/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ugc/rating.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/captchas.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/captchas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/carts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/cities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/remark.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/remark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v2/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v2/entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v2/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v2/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v3/explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v3/explain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/check.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/statistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/statistic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/admin/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/bos/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/bos/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ids.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ids.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/promotion/hongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/promotion/hongbao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/shopping/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/activity.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/shopping/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/shopping/delivery.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/delivery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/shopping/food.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/food.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/shopping/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/statis/statis.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/statis/statis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ugc/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ugc/rating.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v1/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/address.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v1/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v1/cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/cities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v1/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/payments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v1/remark.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/remark.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v2/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v2/entry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v2/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v2/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v2/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v2/userInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/v3/explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v3/explain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodb/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototype/addressComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/prototype/addressComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prototype/baseComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/prototype/baseComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/chooseAddress.d5b44edc46332cf918a4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/chooseAddress.d5b44edc46332cf918a4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/hbDescription.94665e36403279dbec1f.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/hbDescription.94665e36403279dbec1f.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/hbHistory.03546eb2fa69c1a630da.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/hbHistory.03546eb2fa69c1a630da.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/home.5bd8d38bf00f59523e9e.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/home.5bd8d38bf00f59523e9e.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/info.2a442fca44d182eb890d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/info.2a442fca44d182eb890d.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/msite.2eee2d17d8671351f05d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/msite.2eee2d17d8671351f05d.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/orderDetail.3206313b787236449e3a.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/orderDetail.3206313b787236449e3a.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/questionDetail.7ee7dae0bc795c56ee11.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/questionDetail.7ee7dae0bc795c56ee11.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/shop.440be25e5885b83e0413.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/shop.440be25e5885b83e0413.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/shopSafe.b318fd9212bcd2275b07.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/shopSafe.b318fd9212bcd2275b07.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/elm/static/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/bos.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/eus.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/eus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/member.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/payapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/payapi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/promotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/promotion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shopping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/statis.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/statis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/ugc.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ugc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/elm_msite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/elm_shop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/ewm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/manage_home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/manage_shop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -106,31 +16,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/statis/statis.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1260">
+                <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/promotion/hongbao.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/shopping/activity.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/shopping/category.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/shopping/delivery.js">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -143,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InitData/rate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="152" column="16" selection-end-line="168" selection-end-column="56" />
+            <state relative-caret-position="294">
+              <caret line="162" column="19" lean-forward="true" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
               <folding>
                 <element signature="e#30#3694#0" />
                 <element signature="e#3719#3895#0" />
@@ -156,11 +54,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/v1/order.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2142" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/todo.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/default.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -222,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/controller/v1/remark.js" />
         <option value="$PROJECT_DIR$/controller/v1/captchas.js" />
         <option value="$PROJECT_DIR$/controller/v1/address.js" />
         <option value="$PROJECT_DIR$/controller/statis/statis.js" />
@@ -273,6 +191,7 @@
         <option value="$PROJECT_DIR$/controller/shopping/food.js" />
         <option value="$PROJECT_DIR$/models/shopping/food.js" />
         <option value="$PROJECT_DIR$/InitData/rate.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -293,6 +212,11 @@
             <path>
               <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
               <item name="express-mongodb-tack-out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express-mongodb-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
@@ -350,12 +274,12 @@
       <workItem from="1547705918873" duration="2257000" />
       <workItem from="1548378818864" duration="5283000" />
       <workItem from="1548393025877" duration="40000" />
-      <workItem from="1548393119278" duration="7536000" />
+      <workItem from="1548393119278" duration="8817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16680000" />
+    <option name="totallyTimeSpent" value="17961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
@@ -386,36 +310,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controller/promotion/hongbao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="62" selection-start-line="3" selection-start-column="62" selection-end-line="3" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/member/vipcart.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="38" selection-end-line="281" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/development.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/default.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongodb/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
@@ -669,12 +563,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InitData/rate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="152" column="16" selection-end-line="168" selection-end-column="56" />
+        <state relative-caret-position="294">
+          <caret line="162" column="19" lean-forward="true" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
           <folding>
             <element signature="e#30#3694#0" />
             <element signature="e#3719#3895#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2142" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1260">
+            <caret line="60" column="17" lean-forward="true" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
         </state>
       </provider>
     </entry>

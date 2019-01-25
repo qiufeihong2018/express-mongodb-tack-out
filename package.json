@@ -1,9 +1,9 @@
 {
-  "name": "node-elm",
+  "name": "express-mongodb-tack-out",
   "version": "1.0.0",
-  "description": "",
+  "description": "express-mongodb-tack-out",
   "main": "index.js",
-  "author": "cangdu <1264889788@qq.com>",
+  "author": "qiufeihong <qiufeihong2018@126.com>",
   "license": "GPL",
   "private": true,
   "scripts": {
@@ -11,10 +11,6 @@
     "check": "cross-env NODE_ENV=production nodemon --harmony index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "pm2 deploy production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bailicangdu/node-elm"
   },
   "dependencies": {
     "babel": "^6.23.0",
