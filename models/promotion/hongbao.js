@@ -1,7 +1,7 @@
 'use strict'
 
-import mongoose from 'mongoose'
-import hongbaoData from '../../InitData/hongbao'
+const mongoose =require( 'mongoose')
+const hongbaoData =require( '../../InitData/hongbao')
 
 const Schema = mongoose.Schema;
 
@@ -40,4 +40,4 @@ Hongbao.findOne((err, data) => {
 	}
 })
 
-export default  Hongbao
+module.exports=  Hongbao

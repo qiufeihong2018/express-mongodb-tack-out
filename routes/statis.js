@@ -1,7 +1,7 @@
 'use strict'
 
-import express from 'express'
-import Statis from '../controller/statis/statis'
+const express = require('express')
+const Statis = require('../controller/statis/statis')
 
 const router = express.Router()
 
@@ -12,4 +12,4 @@ router.get('/user/:date/count', Statis.userCount)
 router.get('/order/:date/count', Statis.orderCount)
 router.get('/admin/:date/count', Statis.adminCount)
 
-export default router
+module.exports = router

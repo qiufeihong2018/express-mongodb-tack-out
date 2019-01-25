@@ -1,21 +1,15 @@
-// import express from 'express';
-require(express)
-// import db from './mongodb/db.js';
-require('./mongodb/db.js')
-// import config from 'config-lite';
-require('config-lite')
-// import router from './routes/index.js';
-require('./routes/index.js')
-
-import cookieParser from 'cookie-parser'
-import session from 'express-session';
-import connectMongo from 'connect-mongo';
-import winston from 'winston';
-import expressWinston from 'express-winston';
-import path from 'path';
-import history from 'connect-history-api-fallback';
-import chalk from 'chalk';
-// import Statistic from './middlewares/statistic'
+const express = require('express')
+const db =require('./mongodb/db')
+const config=require('config-lite')
+const router=require('./routes/index')
+const cookieParser=require('cookie-parser')
+const session = require('express-session')
+const connectMongo = require('connect-mongo')
+const winston = require('winston')
+const expressWinston = require('express-winston')
+const path = require('path')
+const history = require('connect-history-api-fallback')
+const chalk = require('chalk')
 
 const app = express();
 // 可跨域

@@ -1,7 +1,7 @@
 'use strict'
 
-import HongbaoModel from '../../models/promotion/hongbao'
-import BaseComponent from '../../prototype/baseComponent'
+const HongbaoModel =require( '../../models/promotion/hongbao')
+const BaseComponent =require( '../../prototype/baseComponent')
 
 class Hongbao extends BaseComponent{
 	constructor(){
@@ -57,4 +57,4 @@ class Hongbao extends BaseComponent{
 	}	
 }
 
-export default new Hongbao()
+module.exports= new Hongbao()

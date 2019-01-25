@@ -1,4 +1,4 @@
-export default [{
+module.exports= [{
 	description: "（商家仅支持在线支付）",
 	disabled_reason: "",
 	id: 1,

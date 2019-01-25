@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose'
+const mongoose =require( 'mongoose')
 
 const Schema = mongoose.Schema;
 
@@ -37,4 +37,4 @@ userInfoSchema.index({id: 1});
 
 const UserInfo = mongoose.model('UserInfo', userInfoSchema);
 
-export default UserInfo
+module.exports= UserInfo

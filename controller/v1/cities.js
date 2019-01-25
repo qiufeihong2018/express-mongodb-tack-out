@@ -1,9 +1,8 @@
 'use strict';
 
-import Cities from '../../models/v1/cities'
-import pinyin from "pinyin"
-import AddressComponent from '../../prototype/addressComponent'
-
+const Cities =require('../../models/v1/cities')
+const pinyin =require('pinyin')
+const AddressComponent =require('../../prototype/addressComponent')
 
 class CityHandle extends AddressComponent{
 	constructor(){
@@ -123,4 +122,4 @@ class CityHandle extends AddressComponent{
 		}
 	}
 }
-export default new CityHandle()
+module.exports=new CityHandle()

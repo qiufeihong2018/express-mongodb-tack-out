@@ -1,10 +1,10 @@
 'use strict';
 
-import express from 'express';
-import Shop from '../controller/shopping/shop'
-import Food from '../controller/shopping/food'
-import Category from '../controller/shopping/category'
-import Check from '../middlewares/check'
+const express = require('express');
+const Shop = require('../controller/shopping/shop')
+const Food = require('../controller/shopping/food')
+const Category = require('../controller/shopping/category')
+const Check = require('../middlewares/check')
 
 const router = express.Router();
 
@@ -27,4 +27,4 @@ router.get('/v2/restaurant/category', Category.getCategories);
 router.get('/v1/restaurants/delivery_modes', Category.getDelivery);
 router.get('/v1/restaurants/activity_attributes', Category.getActivity);
 
-export default router
+module.exports = router

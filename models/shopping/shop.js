@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose'
+const mongoose =require( 'mongoose')
 
 const shopSchema = new mongoose.Schema({
 	activities: [{
@@ -76,4 +76,4 @@ shopSchema.index({ id: 1 }); //primary_key 主键
 
 const Shop = mongoose.model('Shop', shopSchema);
 
-export default Shop
+module.exports= Shop

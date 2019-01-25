@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose'
+const mongoose =require( 'mongoose')
 
 const Schema = mongoose.Schema;
 
@@ -88,4 +88,4 @@ orderSchema.index({id: 1});
 
 const Order = mongoose.model('Order', orderSchema);
 
-export default Order
+module.exports= Order

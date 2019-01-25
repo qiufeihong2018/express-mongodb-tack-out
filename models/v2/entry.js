@@ -1,7 +1,7 @@
 'use strict';
 
-import mongoose from 'mongoose'
-import entryData from '../../InitData/entry'
+const mongoose =require( 'mongoose')
+const entryData =require( '../../InitData/entry')
 
 const Schema = mongoose.Schema;
 
@@ -26,4 +26,4 @@ Entry.findOne((err, data) => {
 	}
 })
 
-export default Entry
+module.exports= Entry

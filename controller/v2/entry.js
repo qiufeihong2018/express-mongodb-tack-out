@@ -1,6 +1,6 @@
 'use strict';
 
-import EntryModel from '../../models/v2/entry'
+const EntryModel =require( '../../models/v2/entry')
 
 class Entry {
 	constructor(){
@@ -22,4 +22,4 @@ class Entry {
 	}
 }
 
-export default new Entry()
+module.exports= new Entry()

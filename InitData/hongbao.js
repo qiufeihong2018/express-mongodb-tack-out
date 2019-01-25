@@ -1,4 +1,4 @@
-export default [
+module.exports= [
 {
 id: 7160761341773,
 sn: "201705211244186655961161757573",

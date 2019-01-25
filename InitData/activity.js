@@ -1,4 +1,4 @@
-export default [
+module.exports= [
     {
         description: "",
         icon_color: "3FBDE6",

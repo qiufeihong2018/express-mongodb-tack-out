@@ -14,4 +14,4 @@ class VipCart {
 }
 
 
-export default new VipCart()
+module.exports= new VipCart()

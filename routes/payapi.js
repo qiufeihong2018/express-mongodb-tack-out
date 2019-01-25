@@ -1,6 +1,6 @@
 'use strict';
 
-import express from 'express';
+const express =require( 'express');
 const router = express.Router();
 
 router.get('/payment/queryOrder', (req, res, next) => {
@@ -11,4 +11,4 @@ router.get('/payment/queryOrder', (req, res, next) => {
   });
 })
 
-export default router;
+module.exports= router;
