@@ -1,59 +1,83 @@
-var express = require('express');
-var path = require('path');
-var favicon = require('static-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+// import express from 'express';
+require(express)
+// import db from './mongodb/db.js';
+require('./mongodb/db.js')
+// import config from 'config-lite';
+require('config-lite')
+// import router from './routes/index.js';
+require('./routes/index.js')
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
+import cookieParser from 'cookie-parser'
+import session from 'express-session';
+import connectMongo from 'connect-mongo';
+import winston from 'winston';
+import expressWinston from 'express-winston';
+import path from 'path';
+import history from 'connect-history-api-fallback';
+import chalk from 'chalk';
+// import Statistic from './middlewares/statistic'
 
-var app = express();
+const app = express();
+// 可跨域
+app.all('*', (req, res, next) => {
+    const {origin, Origin, referer, Referer} = req.headers;
+    const allowOrigin = origin || Origin || referer || Referer || '*';
+    res.header("Access-Control-Allow-Origin", allowOrigin);
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
+    res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+    res.header("Access-Control-Allow-Credentials", true); //可以带cookies
+    res.header("X-Powered-By", 'Express');
+    if (req.method == 'OPTIONS') {
+        res.sendStatus(200);
+    } else {
+        next();
+    }
+});
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-app.use(favicon());
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+// app.use(Statistic.apiRecord)
+const MongoStore = connectMongo(session);
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+    name: config.session.name,
+    secret: config.session.secret,
+    resave: true,
+    saveUninitialized: false,
+    cookie: config.session.cookie,
+    store: new MongoStore({
+        url: config.url
+    })
+}))
 
-app.use('/', routes);
-app.use('/users', users);
+// app.use(expressWinston.logger({
+//     transports: [
+//         new (winston.transports.Console)({
+//           json: true,
+//           colorize: true
+//         }),
+//         new winston.transports.File({
+//           filename: 'logs/success.log'
+//         })
+//     ]
+// }));
 
-/// catch 404 and forwarding to error handler
-app.use(function(req, res, next) {
-    var err = new Error('Not Found');
-    err.status = 404;
-    next(err);
+router(app);
+
+// app.use(expressWinston.errorLogger({
+//     transports: [
+//         new winston.transports.Console({
+//           json: true,
+//           colorize: true
+//         }),
+//         new winston.transports.File({
+//           filename: 'logs/error.log'
+//         })
+//     ]
+// }));
+
+app.use(history());
+app.use(express.static('./public'));
+app.listen(config.port, () => {
+    console.log(
+        chalk.green(`成功监听端口：${config.port}`)
+    )
 });
-
-/// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.render('error', {
-            message: err.message,
-            error: err
-        });
-    });
-}
-
-// production error handler
-// no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.render('error', {
-        message: err.message,
-        error: {}
-    });
-});
-
-
-module.exports = app;
