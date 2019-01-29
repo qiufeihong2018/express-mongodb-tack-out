@@ -1,6 +1,6 @@
 // 'use strict'
 
-// export default (req, res, next) => {
+// module.exports= (req, res, next) => {
 // 	if ((/manage/gi).test(req.url)) {
 // 		res.sendFile(__dirname + '/public/manage/index.html')
 // 	}else{

@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose'
+const mongoose =require( 'mongoose')
 
 const Schema  = mongoose.Schema;
 
@@ -14,4 +14,4 @@ statisSchema.index({id: 1})
 
 const Statis = mongoose.model('Statis', statisSchema)
 
-export default Statis
+module.exports= Statis

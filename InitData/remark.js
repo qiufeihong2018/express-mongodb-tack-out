@@ -1,4 +1,4 @@
-export default {
+module.exports= {
 remarks: [
 [
 "不要辣",

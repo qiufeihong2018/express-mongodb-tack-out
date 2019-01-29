@@ -1,4 +1,4 @@
-export default [
+module.exports= [
 {
 id: 15,
 is_in_serving: true,

@@ -1,16 +1,17 @@
 'use strict';
 
-import express from 'express'
-import CityHandle from '../controller/v1/cities'
-import SearchPlace from '../controller/v1/search'
-import Carts from '../controller/v1/carts'
-import Address from '../controller/v1/address'
-import Remark from '../controller/v1/remark'
-import BaseComponent from '../prototype/baseComponent'
-import Captchas from '../controller/v1/captchas'
-import User from '../controller/v2/user'
-import Order from '../controller/v1/order'
-import Hongbao from '../controller/promotion/hongbao'
+const express = require('express')
+const CityHandle = require('../controller/v1/cities')
+const SearchPlace = require('../controller/v1/search')
+const Carts = require('../controller/v1/carts')
+const Address = require('../controller/v1/address')
+const Remark = require('../controller/v1/remark')
+const BaseComponent = require('../prototype/baseComponent')
+const Captchas = require('../controller/v1/captchas')
+const User = require('../controller/v2/user')
+const Order = require('../controller/v1/order')
+const Hongbao = require('../controller/promotion/hongbao')
+
 const baseHandle = new BaseComponent();
 const router = express.Router();
 
@@ -34,5 +35,5 @@ router.delete('/users/:user_id/addresses/:address_id', Address.deleteAddress);
 router.post('/users/:user_id/carts/:cart_id/orders', Order.postOrder);
 router.post('/users/:user_id/hongbao/exchange', Hongbao.exchange);
 
- 
-export default router
+
+module.exports = router

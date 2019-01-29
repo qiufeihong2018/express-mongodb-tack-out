@@ -1,6 +1,6 @@
 'use strict';
 
-import mongoose from 'mongoose'
+const mongoose =require( 'mongoose')
 
 const Schema = mongoose.Schema;
 
@@ -31,4 +31,4 @@ addressSchema.index({id: 1});
 
 const Address = mongoose.model('Address', addressSchema);
 
-export default Address
+module.exports= Address

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="77256ad5-fa91-49f3-9138-64ef0e96c6ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API.md" beforeDir="false" afterPath="$PROJECT_DIR$/API.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COPYING" beforeDir="false" afterPath="$PROJECT_DIR$/COPYING" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/cities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/delivery.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/delivery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/explain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/hongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/hongbao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/payments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/rate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitData/remark.js" beforeDir="false" afterPath="$PROJECT_DIR$/InitData/remark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/default.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/member/vipcart.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/member/vipcart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/promotion/hongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/promotion/hongbao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/shopping/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/shopping/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/shopping/food.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/shopping/food.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/shopping/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/shopping/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/statis/statis.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/statis/statis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/ugc/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/ugc/rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/captchas.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/captchas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/carts.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/carts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/cities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/remark.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/remark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v2/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v2/entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v2/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v2/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v3/explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v3/explain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ecosystem.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/check.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/check.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/statistic.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/statistic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/admin/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/admin/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/bos/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/bos/order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ids.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ids.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/promotion/hongbao.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/promotion/hongbao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/shopping/activity.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/activity.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/shopping/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/shopping/delivery.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/delivery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/shopping/food.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/food.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/shopping/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/shopping/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/statis/statis.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/statis/statis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ugc/rating.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ugc/rating.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v1/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v1/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v1/cities.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/cities.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v1/payments.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/payments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v1/remark.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v1/remark.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v2/entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v2/entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v2/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v2/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v2/userInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v2/userInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/v3/explain.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/v3/explain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongodb/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/mongodb/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototype/addressComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/prototype/addressComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prototype/baseComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/prototype/baseComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/chooseAddress.d5b44edc46332cf918a4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/chooseAddress.d5b44edc46332cf918a4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/hbDescription.94665e36403279dbec1f.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/hbDescription.94665e36403279dbec1f.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/hbHistory.03546eb2fa69c1a630da.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/hbHistory.03546eb2fa69c1a630da.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/home.5bd8d38bf00f59523e9e.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/home.5bd8d38bf00f59523e9e.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/info.2a442fca44d182eb890d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/info.2a442fca44d182eb890d.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/msite.2eee2d17d8671351f05d.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/msite.2eee2d17d8671351f05d.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/orderDetail.3206313b787236449e3a.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/orderDetail.3206313b787236449e3a.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/questionDetail.7ee7dae0bc795c56ee11.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/questionDetail.7ee7dae0bc795c56ee11.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/shop.440be25e5885b83e0413.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/shop.440be25e5885b83e0413.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/shopSafe.b318fd9212bcd2275b07.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/shopSafe.b318fd9212bcd2275b07.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/elm/static/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/elm/static/js/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/bos.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/bos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/eus.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/eus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/member.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/member.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/payapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/payapi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/promotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/promotion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/statis.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/statis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/ugc.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ugc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/v1.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/v3.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/v4.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/elm_msite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/elm_shop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/ewm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/manage_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/manage_shop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>require</find>
+      <find>from</find>
+      <find>import</find>
+      <find>export default</find>
+      <find>'express';</find>
+      <find>'../controller/v2/entry'</find>
+      <find>'../controller/v1/cities'</find>
+      <find>../controller/v2/user'</find>
+      <find>buffer-=require(</find>
+      <find>=require(</find>
+      <find>FoodModelModel</find>
+      <find>=require(</find>
+      <find>'mongoose'</find>
+      <find>require(</find>
+      <find>FoodModel</find>
+      <find>ecosystem.config.js</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>=require(</replace>
+      <replace>const</replace>
+      <replace>module.exports=</replace>
+      <replace>'express');</replace>
+      <replace>'../controller/v1/cities')</replace>
+      <replace>../controller/v2/user')</replace>
+      <replace>from</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/routes/v1.js" />
+        <option value="$PROJECT_DIR$/prototype/addressComponent.js" />
+        <option value="$PROJECT_DIR$/controller/v1/carts.js" />
+        <option value="$PROJECT_DIR$/models/shopping/delivery.js" />
+        <option value="$PROJECT_DIR$/models/shopping/category.js" />
+        <option value="$PROJECT_DIR$/models/shopping/shop.js" />
+        <option value="$PROJECT_DIR$/models/shopping/activity.js" />
+        <option value="$PROJECT_DIR$/controller/v2/entry.js" />
+        <option value="$PROJECT_DIR$/controller/v2/user.js" />
+        <option value="$PROJECT_DIR$/controller/v3/explain.js" />
+        <option value="$PROJECT_DIR$/controller/promotion/hongbao.js" />
+        <option value="$PROJECT_DIR$/controller/shopping/category.js" />
+        <option value="$PROJECT_DIR$/models/promotion/hongbao.js" />
+        <option value="$PROJECT_DIR$/models/bos/order.js" />
+        <option value="$PROJECT_DIR$/models/admin/admin.js" />
+        <option value="$PROJECT_DIR$/middlewares/check.js" />
+        <option value="$PROJECT_DIR$/middlewares/statistic.js" />
+        <option value="$PROJECT_DIR$/controller/admin/admin.js" />
+        <option value="$PROJECT_DIR$/routes/admin.js" />
+        <option value="$PROJECT_DIR$/routes/bos.js" />
+        <option value="$PROJECT_DIR$/routes/eus.js" />
+        <option value="$PROJECT_DIR$/routes/member.js" />
+        <option value="$PROJECT_DIR$/routes/promotion.js" />
+        <option value="$PROJECT_DIR$/routes/shopping.js" />
+        <option value="$PROJECT_DIR$/routes/statis.js" />
+        <option value="$PROJECT_DIR$/routes/ugc.js" />
+        <option value="$PROJECT_DIR$/routes/v2.js" />
+        <option value="$PROJECT_DIR$/routes/v4.js" />
+        <option value="$PROJECT_DIR$/models/v1/payments.js" />
+        <option value="$PROJECT_DIR$/models/v1/cart.js" />
+        <option value="$PROJECT_DIR$/models/v1/address.js" />
+        <option value="$PROJECT_DIR$/models/v1/remark.js" />
+        <option value="$PROJECT_DIR$/models/v2/entry.js" />
+        <option value="$PROJECT_DIR$/models/v2/user.js" />
+        <option value="$PROJECT_DIR$/models/v2/userInfo.js" />
+        <option value="$PROJECT_DIR$/models/v3/explain.js" />
+        <option value="$PROJECT_DIR$/models/ugc/rating.js" />
+        <option value="$PROJECT_DIR$/models/statis/statis.js" />
+        <option value="$PROJECT_DIR$/controller/v1/order.js" />
+        <option value="$PROJECT_DIR$/controller/shopping/shop.js" />
+        <option value="$PROJECT_DIR$/controller/shopping/food.js" />
+        <option value="$PROJECT_DIR$/models/shopping/food.js" />
+        <option value="$PROJECT_DIR$/InitData/rate.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/node_modules/pm2/lib/templates/ecosystem.tpl" />
+        <option value="$PROJECT_DIR$/ecosystem.config.js" />
+        <option value="$PROJECT_DIR$/config/default.js" />
+        <option value="$PROJECT_DIR$/API.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1985" />
+    <option name="y" value="-4" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express-mongodb-tack-out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express-mongodb-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express-mongodb-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="InitData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="express-mongodb-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="express-mongodb-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="77256ad5-fa91-49f3-9138-64ef0e96c6ba" name="Default Changelist" comment="" />
+      <created>1547704994684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547704994684</updated>
+      <workItem from="1547704995979" duration="5000" />
+      <workItem from="1547705031515" duration="176000" />
+      <workItem from="1547705918873" duration="2257000" />
+      <workItem from="1548378818864" duration="5283000" />
+      <workItem from="1548393025877" duration="40000" />
+      <workItem from="1548393119278" duration="9703000" />
+      <workItem from="1548637686680" duration="66000" />
+      <workItem from="1548754825818" duration="762000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19675000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.36259145" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/routes/bos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/eus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/member.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/payapi.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/promotion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/shopping.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="59" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/statis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="53" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/ugc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="50" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/v1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="3" column="53" lean-forward="true" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/v2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="45" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/v3.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/v4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v1/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" selection-end-line="88" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v1/address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v1/cities.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v1/payments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="55" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v1/remark.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="51" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v2/entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v2/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v2/userInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ids.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/v3/explain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ugc/rating.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/statis/statis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/promotion/hongbao.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/shopping/activity.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/shopping/category.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/shopping/delivery.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/v1/order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/shopping/shop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/shopping/food.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7125">
+          <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/shopping/food.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InitData/rate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="162" column="19" lean-forward="true" selection-start-line="162" selection-start-column="19" selection-end-line="162" selection-end-column="19" />
+          <folding>
+            <element signature="e#30#3694#0" />
+            <element signature="e#3719#3895#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2142" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2814">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/pm2/lib/templates/ecosystem.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecosystem.config.js" />
+    <entry file="file://$PROJECT_DIR$/COPYING">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7140">
+          <caret line="340" column="29" selection-start-line="340" selection-start-column="29" selection-end-line="340" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/default.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/API.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="218" column="13" lean-forward="true" selection-start-line="218" selection-start-column="13" selection-end-line="218" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4492">
+            <caret line="252" column="43" selection-start-line="252" selection-start-column="43" selection-end-line="252" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,7 +1,7 @@
 'use strict';
 
-import mongoose from 'mongoose'
-import explainData from '../../InitData/explain'
+const mongoose =require( 'mongoose')
+const explainData =require( '../../InitData/explain')
 
 const Schema = mongoose.Schema;
 
@@ -17,4 +17,4 @@ Explain.findOne((err, data) => {
 	}
 })
 
-export default Explain
+module.exports= Explain

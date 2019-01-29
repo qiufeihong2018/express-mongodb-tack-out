@@ -1,20 +1,20 @@
 'use strict';
 
-import v1 from './v1'
-import v2 from './v2'
-import v3 from './v3'
-import v4 from './v4'
-import ugc from './ugc'
-import bos from './bos'
-import eus from './eus'
-import admin from './admin'
-import payapi from './payapi'
-import statis from './statis'
-import member from './member'
-import shopping from './shopping'
-import promotion from './promotion'
+const v1 =require('./v1')
+const v2 =require('./v2')
+const v3 =require('./v3')
+const v4 =require('./v4')
+const ugc =require('./ugc')
+const bos =require('./bos')
+const eus =require('./eus')
+const admin =require('./admin')
+const payapi =require('./payapi')
+const statis =require('./statis')
+const member =require('./member')
+const shopping =require('./shopping')
+const promotion =require('./promotion')
 
-export default app => {
+module.exports= app => {
 	// app.get('/', (req, res, next) => {
 	// 	res.redirect('/');
 	// });

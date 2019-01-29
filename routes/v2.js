@@ -1,9 +1,9 @@
 'use strict';
 
-import express from 'express';
-import Entry from '../controller/v2/entry'
-import CityHandle from '../controller/v1/cities'
-import User from '../controller/v2/user'
+const express = require('express');
+const Entry = require('../controller/v2/entry')
+const CityHandle = require('../controller/v1/cities')
+const User = require('../controller/v2/user')
 const router = express.Router();
 
 router.get('/index_entry', Entry.getEntry);
@@ -13,4 +13,4 @@ router.get('/signout', User.signout);
 router.post('/changepassword', User.chanegPassword);
 
 
-export default router
+module.exports = router
