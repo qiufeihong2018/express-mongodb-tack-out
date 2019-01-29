@@ -1,9 +1,9 @@
 'use strict';
 
-import CategoryModel from '../../models/shopping/category'
-import BaseComponent from '../../prototype/baseComponent'
-import DeliveryModel from '../../models/shopping/delivery'
-import ActivityModel from '../../models/shopping/activity'
+const CategoryModel =require( '../../models/shopping/category')
+const BaseComponent =require( '../../prototype/baseComponent')
+const DeliveryModel =require( '../../models/shopping/delivery')
+const ActivityModel =require( '../../models/shopping/activity')
 
 class Category extends BaseComponent{
 	constructor(){
@@ -75,4 +75,4 @@ class Category extends BaseComponent{
 	}
 }
 
-export default new Category()
+module.exports= new Category()

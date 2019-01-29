@@ -1,7 +1,7 @@
 'use strict';
 
-import mongoose from 'mongoose'
-import {ratingList, scores, tags} from '../../InitData/rate'
+const mongoose =require( 'mongoose')
+const {ratingList, scores, tags} =require( '../../InitData/rate')
 const Schema = mongoose.Schema;
 
 const rateSchema = new Schema({
@@ -82,4 +82,4 @@ const Rating = mongoose.model('Rating', rateSchema);
 
 
 
-export default Rating
+module.exports= Rating
