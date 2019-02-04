@@ -4,7 +4,7 @@ express-mongodb-tack-out
 
 # 说明
 
->  express-mongodb-tack-out接口文档: [接口文档地址](https://github.com/bailicangdu/node-elm/blob/master/API.md) 
+>  express-mongodb-tack-out接口文档: [接口文档地址](https://github.com/qiufeihong2018/express-mongodb-tack-out/blob/master/API.md) 
 
 >  如果对您对此项目有兴趣，可以点 "Star" 支持一下 谢谢！ ^_^
 
@@ -32,86 +32,17 @@ nodejs + express + mongodb + mongoose + es6/7 + vue + element-ui
 ```
 
 ```
-git clone https://github.com/bailicangdu/node-elm  
+git clone git@github.com:qiufeihong2018/express-mongodb-tack-out.git  
 
-cd node-elm
+cd express-mongodb-tack-out
 
 npm install 或 yarn(推荐)
 
 npm run dev
 
-访问: http://localhost:8001（如果已启动前台程序，则不需打开此地址）
+访问: http://localhost:7979（如果已启动前台程序，则不需打开此地址）
 
 ```
 
 
 ## 效果演示
-
-#### (可在后台管理系统添加商铺，食品等数据，并在前端地址查看效果)
-
-### 前端网址
-
-###### 移动端扫描下方二维码
-
-
-### 后台管理系统网址
-
-
-
-
-## 目标功能
-
-- [x] IP定位 -- 完成
-- [x] 城市列表 -- 完成
-- [x] 搜索地址 -- 完成
-- [x] 上传图片 -- 完成
-- [x] 添加商铺 -- 完成
-- [x] 添加食品 -- 完成
-- [x] 测量距离 -- 完成
-- [x] 搜索美食，餐馆 -- 完成
-- [x] 根据距离、销量、评分、特色菜、配送方式等进行排序和筛选 -- 完成
-- [x] 评价列表 -- 完成
-- [x] 食品详情 -- 完成
-- [x] 商家详情 -- 完成
-- [x] 购物车功能 -- 完成
-- [x] 登录、注册 -- 完成
-- [x] 修改密码 -- 完成
-- [x] 用户信息 -- 完成
-- [x] 添加、删除、修改收货地址 -- 完成
-- [x] 下单  -- 完成 ✨✨
-- [x] 订单信息 -- 完成
-- [x] 红包 -- 完成
-- [x] 商铺管理 -- 完成
-- [x] 食品管理 -- 完成
-- [x] 管理员权限验证 -- 完成
-- [x] 超级管理员 -- 完成
-- [x] 订单管理 -- 完成
-- [x] 流量统计 -- 完成
-- [x] 前后台路由同构 -- 完成
-- [x] 部署上线 -- 完成
-
-
-## API接口文档
-
-
-
-
-
-
-## 部分截图
-
-#### 部分前台页面
-
-
-#### 部分后台管理系统页面
-
-
-
-
-
-
-## 项目布局
-
-
-## License
-
