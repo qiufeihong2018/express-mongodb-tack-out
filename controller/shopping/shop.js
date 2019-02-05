@@ -452,6 +452,7 @@ class Shop extends AddressComponent {
 
     async deleteResturant(req, res, next) {
         const restaurant_id = req.params.restaurant_id;
+        console.log(restaurant_id)
         if (!restaurant_id || !Number(restaurant_id)) {
             console.log('restaurant_id参数错误');
             res.send({

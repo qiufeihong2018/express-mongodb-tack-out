@@ -237,7 +237,7 @@ class Food extends BaseComponent {
                 return
             }
             try {
-                const foodEntity = await FoodModel.create(newFood);
+                const foodEntity = await FoodModel.Food.create(newFood);
                 category.foods.push(foodEntity);
                 category.markModified('foods');
                 await category.save();
@@ -381,7 +381,7 @@ class Food extends BaseComponent {
                 filter = {restaurant_id}
             }
 
-            const foods = await FoodModel.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
+            const foods = await FoodModel.Food.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
             res.send(foods);
         } catch (err) {
             console.log('获取食品数据失败', err);
@@ -401,7 +401,7 @@ class Food extends BaseComponent {
                 filter = {restaurant_id}
             }
 
-            const count = await FoodModel.find(filter).count();
+            const count = await FoodModel.Food.find(filter).count();
             res.send({
                 status: 1,
                 count,
@@ -443,7 +443,7 @@ class Food extends BaseComponent {
                 let newData;
                 if (new_category_id !== category_id) {
                     newData = {name, description, image_path, category_id: new_category_id, specfoods, specifications};
-                    const food = await FoodModel.findOneAndUpdate({item_id}, {$set: newData});
+                    const food = await FoodModel.Food.findOneAndUpdate({item_id}, {$set: newData});
 
                     const menu = await MenuModel.findOne({id: category_id})
                     const targetmenu = await MenuModel.findOne({id: new_category_id})
@@ -457,7 +457,7 @@ class Food extends BaseComponent {
                     await menu.save()
                 } else {
                     newData = {name, description, image_path, specfoods, specifications};
-                    const food = await FoodModel.findOneAndUpdate({item_id}, {$set: newData});
+                    const food = await FoodModel.Food.findOneAndUpdate({item_id}, {$set: newData});
 
                     const menu = await MenuModel.findOne({id: category_id})
                     let subFood = menu.foods.id(food._id);
@@ -492,8 +492,8 @@ class Food extends BaseComponent {
             return
         }
         try {
-            const food = await FoodModel.findOne({item_id: food_id});
-            const menu = await MenuModel.findOne({id: food.category_id})
+            const food = await FoodModel.Food.findOne({item_id: food_id});
+            const menu = await MenuModel.Food.findOne({id: food.category_id})
             let subFood = menu.foods.id(food._id);
             await subFood.remove()
             await menu.save()
