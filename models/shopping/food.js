@@ -72,4 +72,4 @@ const Food = mongoose.model('Food', foodSchema);
 
 const Menu = mongoose.model('Menu', menuSchema);
 
-exports.Food = Food, exports.Menu = Menu
+module.exports.Food = Food, module.exports.Menu = Menu

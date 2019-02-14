@@ -1,7 +1,6 @@
 'use strict';
 
-const MenuModel = require('../../models/shopping/food')
-const FoodModel = require('../../models/shopping/food')
+const {Food: FoodModel, Menu: MenuModel} = require('../../models/shopping/food')
 const ShopModel = require('../../models/shopping/shop')
 const BaseComponent = require('../../prototype/baseComponent')
 const formidable = require('formidable')
@@ -9,20 +8,21 @@ const formidable = require('formidable')
 class Food extends BaseComponent {
     constructor() {
         super();
-        this.defaultData = [{
-            name: '热销榜',
-            description: '大家喜欢吃，才叫真好吃。',
-            icon_url: "5da3872d782f707b4c82ce4607c73d1ajpeg",
-            is_selected: true,
-            type: 1,
-            foods: [],
-        }, {
-            name: '优惠',
-            description: '美味又实惠, 大家快来抢!',
-            icon_url: "4735c4342691749b8e1a531149a46117jpeg",
-            type: 1,
-            foods: [],
-        }]
+        this.defaultData = [
+            {
+                name: '热销榜',
+                description: '大家喜欢吃，才叫真好吃。',
+                icon_url: "5da3872d782f707b4c82ce4607c73d1ajpeg",
+                is_selected: true,
+                type: 1,
+                foods: [],
+            }, {
+                name: '优惠',
+                description: '美味又实惠, 大家快来抢!',
+                icon_url: "4735c4342691749b8e1a531149a46117jpeg",
+                type: 1,
+                foods: [],
+            }]
         this.initData = this.initData.bind(this);
         this.addFood = this.addFood.bind(this);
         this.getCategory = this.getCategory.bind(this);
@@ -41,7 +41,16 @@ class Food extends BaseComponent {
                 throw new Error(err);
             }
             const defaultData = this.defaultData[i];
-            // const Category = {...defaultData, id: category_id, restaurant_id};
+            const Category = {
+                name: defaultData.name,
+                description: defaultData.description,
+                icon_url: defaultData.icon_url,
+                type: defaultData.type,
+                foods: defaultData.foods,
+                is_selected: defaultData.is_selected,
+                id: category_id,
+                restaurant_id
+            };
             const newFood = new MenuModel(Category);
             try {
                 await newFood.save();
@@ -237,7 +246,7 @@ class Food extends BaseComponent {
                 return
             }
             try {
-                const foodEntity = await FoodModel.Food.create(newFood);
+                const foodEntity = await FoodModel.create(newFood);
                 category.foods.push(foodEntity);
                 category.markModified('foods');
                 await category.save();
@@ -381,7 +390,7 @@ class Food extends BaseComponent {
                 filter = {restaurant_id}
             }
 
-            const foods = await FoodModel.Food.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
+            const foods = await FoodModel.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
             res.send(foods);
         } catch (err) {
             console.log('获取食品数据失败', err);
@@ -401,7 +410,7 @@ class Food extends BaseComponent {
                 filter = {restaurant_id}
             }
 
-            const count = await FoodModel.Food.find(filter).count();
+            const count = await FoodModel.find(filter).count();
             res.send({
                 status: 1,
                 count,
@@ -443,7 +452,7 @@ class Food extends BaseComponent {
                 let newData;
                 if (new_category_id !== category_id) {
                     newData = {name, description, image_path, category_id: new_category_id, specfoods, specifications};
-                    const food = await FoodModel.Food.findOneAndUpdate({item_id}, {$set: newData});
+                    const food = await FoodModel.findOneAndUpdate({item_id}, {$set: newData});
 
                     const menu = await MenuModel.findOne({id: category_id})
                     const targetmenu = await MenuModel.findOne({id: new_category_id})
@@ -457,7 +466,7 @@ class Food extends BaseComponent {
                     await menu.save()
                 } else {
                     newData = {name, description, image_path, specfoods, specifications};
-                    const food = await FoodModel.Food.findOneAndUpdate({item_id}, {$set: newData});
+                    const food = await FoodModel.findOneAndUpdate({item_id}, {$set: newData});
 
                     const menu = await MenuModel.findOne({id: category_id})
                     let subFood = menu.foods.id(food._id);
@@ -492,8 +501,10 @@ class Food extends BaseComponent {
             return
         }
         try {
-            const food = await FoodModel.Food.findOne({item_id: food_id});
-            const menu = await MenuModel.Food.findOne({id: food.category_id})
+            console.log('FoodModel', FoodModel)
+
+            const food = await FoodModel.findOne({item_id: food_id});
+            const menu = await MenuModel.findOne({id: food.category_id})
             let subFood = menu.foods.id(food._id);
             await subFood.remove()
             await menu.save()
