@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
-
+// 定义文档的模板
 const foodSchema = new Schema({
     rating: {type: Number, default: 0},
     is_featured: {type: Number, default: 0},
@@ -53,6 +53,7 @@ const foodSchema = new Schema({
     }]
 })
 
+// 定义了item_id为正序的索引
 foodSchema.index({item_id: 1});
 
 const menuSchema = new Schema({
@@ -67,9 +68,9 @@ const menuSchema = new Schema({
 });
 
 menuSchema.index({id: 1});
-
+// 获得了'Food'的模型
 const Food = mongoose.model('Food', foodSchema);
 
 const Menu = mongoose.model('Menu', menuSchema);
 
-module.exports.Food = Food, module.exports.Menu = Menu
+module.exports = {Food, Menu}
