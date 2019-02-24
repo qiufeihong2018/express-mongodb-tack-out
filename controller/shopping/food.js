@@ -16,13 +16,14 @@ class Food extends BaseComponent {
             is_selected: true,
             type: 1,
             foods: [],
-        }, {
-            name: '优惠',
-            description: '美味又实惠, 大家快来抢!',
-            icon_url: "4735c4342691749b8e1a531149a46117jpeg",
-            type: 1,
-            foods: [],
-        }]
+        },
+            {
+                name: '优惠',
+                description: '美味又实惠, 大家快来抢!',
+                icon_url: "4735c4342691749b8e1a531149a46117jpeg",
+                type: 1,
+                foods: [],
+            }]
         this.initData = this.initData.bind(this);
         this.addFood = this.addFood.bind(this);
         this.getCategory = this.getCategory.bind(this);
