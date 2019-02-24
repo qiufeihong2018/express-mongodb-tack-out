@@ -1,7 +1,6 @@
 'use strict';
 
-const MenuModel = require('../../models/shopping/food')
-const FoodModel = require('../../models/shopping/food')
+const modelShopFood = require('../../models/shopping/food')
 const ShopModel = require('../../models/shopping/shop')
 const BaseComponent = require('../../prototype/baseComponent')
 const formidable = require('formidable')
@@ -9,15 +8,15 @@ const formidable = require('formidable')
 class Food extends BaseComponent {
     constructor() {
         super();
-        this.defaultData = [{
-            name: '热销榜',
-            description: '大家喜欢吃，才叫真好吃。',
-            icon_url: "5da3872d782f707b4c82ce4607c73d1ajpeg",
-            is_selected: true,
-            type: 1,
-            foods: [],
-        },
+        this.defaultData = [
             {
+                name: '热销榜',
+                description: '大家喜欢吃，才叫真好吃。',
+                icon_url: "5da3872d782f707b4c82ce4607c73d1ajpeg",
+                is_selected: true,
+                type: 1,
+                foods: [],
+            }, {
                 name: '优惠',
                 description: '美味又实惠, 大家快来抢!',
                 icon_url: "4735c4342691749b8e1a531149a46117jpeg",
@@ -42,8 +41,17 @@ class Food extends BaseComponent {
                 throw new Error(err);
             }
             const defaultData = this.defaultData[i];
-            // const Category = {...defaultData, id: category_id, restaurant_id};
-            const newFood = new MenuModel(Category);
+            const Category = {
+                name: defaultData.name,
+                description: defaultData.description,
+                icon_url: defaultData.icon_url,
+                type: defaultData.type,
+                foods: defaultData.foods,
+                is_selected: defaultData.is_selected,
+                id: category_id,
+                restaurant_id
+            };
+            const newFood = new modelShopFood.Menu(Category);
             try {
                 await newFood.save();
                 console.log('初始化食品数据成功');
@@ -57,7 +65,7 @@ class Food extends BaseComponent {
     async getCategory(req, res, next) {
         const restaurant_id = req.params.restaurant_id;
         try {
-            const category_list = await MenuModel.find({restaurant_id});
+            const category_list = await modelShopFood.Menu.find({restaurant_id});
             res.send({
                 status: 1,
                 category_list,
@@ -108,7 +116,7 @@ class Food extends BaseComponent {
                 id: category_id,
                 foods: [],
             }
-            const newFood = new MenuModel(foodObj);
+            const newFood = new modelShopFood.Menu(foodObj);
             try {
                 await newFood.save();
                 res.send({
@@ -153,7 +161,7 @@ class Food extends BaseComponent {
             let category;
             let restaurant;
             try {
-                category = await MenuModel.findOne({id: fields.category_id});
+                category = await modelShopFood.Menu.findOne({id: fields.category_id});
                 restaurant = await ShopModel.findOne({id: fields.restaurant_id});
             } catch (err) {
                 console.log('获取食品类型和餐馆信息失败');
@@ -238,7 +246,7 @@ class Food extends BaseComponent {
                 return
             }
             try {
-                const foodEntity = await FoodModel.Food.create(newFood);
+                const foodEntity = await modelShopFood.Food.create(newFood);
                 category.foods.push(foodEntity);
                 category.markModified('foods');
                 await category.save();
@@ -338,7 +346,7 @@ class Food extends BaseComponent {
             };
         }
         try {
-            const menu = await MenuModel.find(filter, '-_id');
+            const menu = await modelShopFood.Menu.find(filter, '-_id');
             res.send(menu);
         } catch (err) {
             console.log('获取食品数据失败', err);
@@ -362,7 +370,7 @@ class Food extends BaseComponent {
             return
         }
         try {
-            const menu = await MenuModel.findOne({id: category_id}, '-_id');
+            const menu = await modelShopFood.Menu.findOne({id: category_id}, '-_id');
             res.send(menu)
         } catch (err) {
             console.log('获取Menu详情失败', err);
@@ -382,7 +390,7 @@ class Food extends BaseComponent {
                 filter = {restaurant_id}
             }
 
-            const foods = await FoodModel.Food.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
+            const foods = await modelShopFood.Food.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
             res.send(foods);
         } catch (err) {
             console.log('获取食品数据失败', err);
@@ -402,7 +410,7 @@ class Food extends BaseComponent {
                 filter = {restaurant_id}
             }
 
-            const count = await FoodModel.Food.find(filter).count();
+            const count = await modelShopFood.Food.find(filter).count();
             res.send({
                 status: 1,
                 count,
@@ -444,10 +452,10 @@ class Food extends BaseComponent {
                 let newData;
                 if (new_category_id !== category_id) {
                     newData = {name, description, image_path, category_id: new_category_id, specfoods, specifications};
-                    const food = await FoodModel.Food.findOneAndUpdate({item_id}, {$set: newData});
+                    const food = await modelShopFood.Food.findOneAndUpdate({item_id}, {$set: newData});
 
-                    const menu = await MenuModel.findOne({id: category_id})
-                    const targetmenu = await MenuModel.findOne({id: new_category_id})
+                    const menu = await modelShopFood.Menu.findOne({id: category_id})
+                    const targetmenu = await modelShopFood.Menu.findOne({id: new_category_id})
 
                     let subFood = menu.foods.id(food._id);
                     subFood.set(newData)
@@ -458,9 +466,9 @@ class Food extends BaseComponent {
                     await menu.save()
                 } else {
                     newData = {name, description, image_path, specfoods, specifications};
-                    const food = await FoodModel.Food.findOneAndUpdate({item_id}, {$set: newData});
+                    const food = await modelShopFood.Food.findOneAndUpdate({item_id}, {$set: newData});
 
-                    const menu = await MenuModel.findOne({id: category_id})
+                    const menu = await modelShopFood.Menu.findOne({id: category_id})
                     let subFood = menu.foods.id(food._id);
                     subFood.set(newData)
                     await menu.save()
@@ -482,6 +490,7 @@ class Food extends BaseComponent {
     }
 
     async deleteFood(req, res, next) {
+        // 前端传过来的id值
         const food_id = req.params.food_id;
         if (!food_id || !Number(food_id)) {
             console.log('food_id参数错误');
@@ -493,8 +502,10 @@ class Food extends BaseComponent {
             return
         }
         try {
-            const food = await FoodModel.Food.findOne({item_id: food_id});
-            const menu = await MenuModel.Food.findOne({id: food.category_id})
+            const food = await modelShopFood.Food.findOne({item_id: food_id});
+            console.log('food', food)
+            const menu = await modelShopFood.Menu.findOne({id: food.category_id})
+            console.log('menu', menu)
             let subFood = menu.foods.id(food._id);
             await subFood.remove()
             await menu.save()
