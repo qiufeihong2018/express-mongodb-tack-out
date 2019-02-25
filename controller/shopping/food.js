@@ -503,9 +503,7 @@ class Food extends BaseComponent {
         }
         try {
             const food = await modelShopFood.Food.findOne({item_id: food_id});
-            console.log('food', food)
             const menu = await modelShopFood.Menu.findOne({id: food.category_id})
-            console.log('menu', menu)
             let subFood = menu.foods.id(food._id);
             await subFood.remove()
             await menu.save()
