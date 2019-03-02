@@ -21,7 +21,8 @@ class AddressComponent extends BaseComponent {
     async guessPosition(req) {
         return new Promise(async (resolve, reject) => {
             let ip;
-            const defaultIp = '180.158.102.141';
+            // 浙江省杭州市网易云数据中心
+            const defaultIp = '114.113.197.132';
             if (process.env.NODE_ENV == 'development') {
                 ip = defaultIp;
             } else {
