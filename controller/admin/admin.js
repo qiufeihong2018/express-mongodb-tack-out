@@ -249,8 +249,8 @@ class Admin extends AddressComponent {
 
     async updateAvatar(req, res, next) {
         const admin_id = req.params.admin_id;
+        // 判断是否有id
         if (!admin_id || !Number(admin_id)) {
-            console.log('admin_id参数错误', admin_id)
             res.send({
                 status: 0,
                 type: 'ERROR_ADMINID',
@@ -258,7 +258,6 @@ class Admin extends AddressComponent {
             })
             return
         }
-
         try {
             const image_path = await this.getPath(req);
             await AdminModel.findOneAndUpdate({id: admin_id}, {$set: {avatar: image_path}});
@@ -268,7 +267,6 @@ class Admin extends AddressComponent {
             })
             return
         } catch (err) {
-            console.log('上传图片失败', err);
             res.send({
                 status: 0,
                 type: 'ERROR_UPLOAD_IMG',
