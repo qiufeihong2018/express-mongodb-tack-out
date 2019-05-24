@@ -11,21 +11,21 @@ const db = mongoose.connection;
 
 db.once('open', () => {
     console.log(
-        chalk.green('connected')
+        chalk.green('Connected')
     );
 })
 
-db.on('error', function (error) {
+db.on('error',(error)=>{
     console.error(
-        chalk.red('Error in MongoDb connection: ' + error)
-    );
-    mongoose.disconnect();
-});
+        chalk.red(`Error in MongoDb connection:${error}`)
+    )
+    mongoose.disconnect()
+})
 
-db.on('close', function () {
+db.on('close', () => {
     console.log(
         chalk.red('数据库断开，重新连接数据库')
-    );
+    )
     mongoose.connect(config.url, {server: {auto_reconnect: true}});
 });
 
