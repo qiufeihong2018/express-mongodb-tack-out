@@ -11,18 +11,18 @@ const db = mongoose.connection;
 
 db.once('open', () => {
     console.log(
-        chalk.green('connected')
+        chalk.green('Connected')
     );
 })
 
-db.on('error', function (error) {
+db.on('error',(error)=>{
     console.error(
-        chalk.red('Error in MongoDb connection: ' + error)
-    );
-    mongoose.disconnect();
-});
+        chalk.red(`Error in MongoDb connection:${error}`)
+    )
+    mongoose.disconnect()
+})
 
-db.on('close', function () {
+db.on('close', () => {
     console.log(
         chalk.red('database error')
     );
