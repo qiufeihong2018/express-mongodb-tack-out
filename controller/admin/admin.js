@@ -190,11 +190,11 @@ class Admin extends AddressComponent {
                 data: allAdmin,
             })
         } catch (err) {
-            console.log('获取超级管理列表失败', err);
+            console.log('获取管理列表失败', err);
             res.send({
                 status: 0,
                 type: 'ERROR_GET_ADMIN_LIST',
-                message: '获取超级管理列表失败'
+                message: '获取管理列表失败'
             })
         }
     }
@@ -219,7 +219,7 @@ class Admin extends AddressComponent {
     async getAdminInfo(req, res, next) {
         const admin_id = req.session.admin_id;
         if (!admin_id || !Number(admin_id)) {
-            // console.log('获取管理员信息的session失效');
+            console.log('获取管理员信息的session失效');
             res.send({
                 status: 0,
                 type: 'ERROR_SESSION',
@@ -277,4 +277,4 @@ class Admin extends AddressComponent {
     }
 }
 
-module.exports = new Admin()
+module.exports = Admin

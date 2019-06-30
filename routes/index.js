@@ -15,9 +15,6 @@ const shopping =require('./shopping')
 const promotion =require('./promotion')
 
 module.exports= app => {
-	// app.get('/', (req, res, next) => {
-	// 	res.redirect('/');
-	// });
 	app.use('/v1', v1);
 	app.use('/v2', v2);
 	app.use('/v3', v3);

@@ -32,7 +32,7 @@ class User extends AddressComponent {
             const {username, password, captcha_code} = fields;
             try {
                 if (!username) {
-                    throw new Error('用户名参数错误');
+                    throw new Error('买家名参数错误');
                 } else if (!password) {
                     throw new Error('密码参数错误');
                 } else if (!captcha_code) {
@@ -71,7 +71,7 @@ class User extends AddressComponent {
                     req.session.user_id = user_id;
                     res.send(userinfo);
                 } else if (user.password.toString() !== newpassword.toString()) {
-                    console.log('用户登录密码错误')
+                    console.log('买家登录密码错误')
                     res.send({
                         status: 0,
                         type: 'ERROR_PASSWORD',
@@ -84,7 +84,7 @@ class User extends AddressComponent {
                     res.send(userinfo)
                 }
             } catch (err) {
-                console.log('用户登陆失败', err);
+                console.log('买家登陆失败', err);
                 res.send({
                     status: 0,
                     type: 'SAVE_USER_FAILED',
@@ -103,7 +103,7 @@ class User extends AddressComponent {
             res.send({
                 status: 0,
                 type: 'GET_USER_INFO_FAIELD',
-                message: '通过session获取用户信息失败',
+                message: '通过session获取买家信息失败',
             })
             return
         }
@@ -111,11 +111,11 @@ class User extends AddressComponent {
             const userinfo = await UserInfoModel.findOne({user_id}, '-_id');
             res.send(userinfo)
         } catch (err) {
-            console.log('通过session获取用户信息失败', err);
+            console.log('通过session获取买家信息失败', err);
             res.send({
                 status: 0,
                 type: 'GET_USER_INFO_FAIELD',
-                message: '通过session获取用户信息失败',
+                message: '通过session获取买家信息失败',
             })
         }
     }
@@ -127,7 +127,7 @@ class User extends AddressComponent {
             res.send({
                 status: 0,
                 type: 'GET_USER_INFO_FAIELD',
-                message: '通过用户ID获取用户信息失败',
+                message: '通过买家ID获取买家信息失败',
             })
             return
         }
@@ -135,11 +135,11 @@ class User extends AddressComponent {
             const userinfo = await UserInfoModel.findOne({user_id}, '-_id');
             res.send(userinfo)
         } catch (err) {
-            console.log('通过用户ID获取用户信息失败', err);
+            console.log('通过买家ID获取买家信息失败', err);
             res.send({
                 status: 0,
                 type: 'GET_USER_INFO_FAIELD',
-                message: '通过用户ID获取用户信息失败',
+                message: '通过买家ID获取买家信息失败',
             })
         }
     }
@@ -204,7 +204,7 @@ class User extends AddressComponent {
                     res.send({
                         status: 0,
                         type: 'USER_NOT_FOUND',
-                        message: '未找到当前用户',
+                        message: '未找到当前买家',
                     })
                 } else if (user.password.toString() !== md5password.toString()) {
                     res.send({
@@ -247,11 +247,11 @@ class User extends AddressComponent {
             const users = await UserInfoModel.find({}, '-_id').sort({user_id: -1}).limit(Number(limit)).skip(Number(offset));
             res.send(users);
         } catch (err) {
-            console.log('获取用户列表数据失败', err);
+            console.log('获取买家列表数据失败', err);
             res.send({
                 status: 0,
                 type: 'GET_DATA_ERROR',
-                message: '获取用户列表数据失败'
+                message: '获取买家列表数据失败'
             })
         }
     }
@@ -264,11 +264,11 @@ class User extends AddressComponent {
                 count,
             })
         } catch (err) {
-            console.log('获取用户数量失败', err);
+            console.log('获取买家数量失败', err);
             res.send({
                 status: 0,
                 type: 'ERROR_TO_GET_USER_COUNT',
-                message: '获取用户数量失败'
+                message: '获取买家数量失败'
             })
         }
     }
@@ -323,11 +323,11 @@ class User extends AddressComponent {
                 }
             })
         }).catch(err => {
-            console.log('获取用户分布城市数据失败', err);
+            console.log('获取买家分布城市数据失败', err);
             res.send({
                 status: 0,
                 type: 'ERROR_GET_USER_CITY',
-                message: '获取用户分布城市数据失败'
+                message: '获取买家分布城市数据失败'
             })
         })
     }

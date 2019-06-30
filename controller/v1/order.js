@@ -24,8 +24,19 @@ class Order extends BaseComponent {
                 })
                 return
             }
-            const {user_id, cart_id} = req.params;
-            const {address_id, come_from = 'mobile_web', deliver_time = '', description, entities, geohash, paymethod_id = 1} = fields;
+            const {
+                user_id,
+                cart_id
+            } = req.params;
+            const {
+                address_id,
+                come_from = 'mobile_web',
+                deliver_time = '',
+                description,
+                entities,
+                geohash,
+                paymethod_id = 1
+            } = fields;
             try {
                 if (!(entities instanceof Array) || !entities.length) {
                     throw new Error('entities参数错误')
@@ -52,7 +63,9 @@ class Order extends BaseComponent {
             let cartDetail;
             let order_id;
             try {
-                cartDetail = await CartModel.findOne({id: cart_id});
+                cartDetail = await CartModel.findOne({
+                    id: cart_id
+                });
                 order_id = await this.getId('order_id');
             } catch (err) {
                 console.log('获取数据失败', err);
@@ -63,7 +76,9 @@ class Order extends BaseComponent {
                 })
                 return
             }
-            const deliver_fee = {price: cartDetail.cart.deliver_amount};
+            const deliver_fee = {
+                price: cartDetail.cart.deliver_amount
+            };
             const orderObj = {
                 basket: {
                     group: entities,
@@ -113,7 +128,9 @@ class Order extends BaseComponent {
 
     async getOrders(req, res, next) {
         const user_id = req.params.user_id;
-        const {limit = 0, offset = 0} = req.query;
+        const {
+            limit = 0, offset = 0
+        } = req.query;
         try {
             if (!user_id || !Number(user_id)) {
                 throw new Error('user_id参数错误')
@@ -132,7 +149,11 @@ class Order extends BaseComponent {
             return
         }
         try {
-            const orders = await OrderModel.find({user_id}).sort({id: -1}).limit(Number(limit)).skip(Number(offset));
+            const orders = await OrderModel.find({
+                user_id
+            }).sort({
+                id: -1
+            }).limit(Number(limit)).skip(Number(offset));
             const timeNow = new Date().getTime();
             orders.map(item => {
                 if (timeNow - item.order_time < 900000) {
@@ -156,7 +177,10 @@ class Order extends BaseComponent {
     }
 
     async getDetail(req, res, next) {
-        const {user_id, order_id} = req.params;
+        const {
+            user_id,
+            order_id
+        } = req.params;
         try {
             if (!user_id || !Number(user_id)) {
                 throw new Error('user_id参数错误')
@@ -173,8 +197,12 @@ class Order extends BaseComponent {
             return
         }
         try {
-            const order = await OrderModel.findOne({id: order_id}, '-_id');
-            const addressDetail = await AddressModel.findOne({id: order.address_id});
+            const order = await OrderModel.findOne({
+                id: order_id
+            }, '-_id');
+            const addressDetail = await AddressModel.findOne({
+                id: order.address_id
+            });
             // const orderDetail = {
             //     ...order, ...{
             //         addressDetail: addressDetail.address,
@@ -184,6 +212,15 @@ class Order extends BaseComponent {
             //         phone: addressDetail.phone
             //     }
             // };
+
+            let detail = {
+                addressDetail: addressDetail.address,
+                consignee: addressDetail.name,
+                deliver_time: '尽快送达',
+                pay_method: '在线支付',
+                phone: addressDetail.phone
+            }
+            const orderDetail = eval('(' + (JSON.stringify(order) + JSON.stringify(detail)).replace(/}{/, ',') + ')')
             res.send(orderDetail)
         } catch (err) {
             console.log('获取订单信息失败', err);
@@ -196,14 +233,22 @@ class Order extends BaseComponent {
     }
 
     async getAllOrders(req, res, next) {
-        const {restaurant_id, limit = 20, offset = 0} = req.query;
+        const {
+            restaurant_id,
+            limit = 20,
+            offset = 0
+        } = req.query;
         try {
             let filter = {};
             if (restaurant_id && Number(restaurant_id)) {
-                filter = {restaurant_id}
+                filter = {
+                    restaurant_id
+                }
             }
 
-            const orders = await OrderModel.find(filter).sort({id: -1}).limit(Number(limit)).skip(Number(offset));
+            const orders = await OrderModel.find(filter).sort({
+                id: -1
+            }).limit(Number(limit)).skip(Number(offset));
             const timeNow = new Date().getTime();
             orders.map(item => {
                 if (timeNow - item.order_time < 900000) {
@@ -231,7 +276,9 @@ class Order extends BaseComponent {
         try {
             let filter = {};
             if (restaurant_id && Number(restaurant_id)) {
-                filter = {restaurant_id}
+                filter = {
+                    restaurant_id
+                }
             }
 
             const count = await OrderModel.find(filter).count();

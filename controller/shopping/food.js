@@ -139,15 +139,15 @@ class Food extends BaseComponent {
         form.parse(req, async (err, fields, files) => {
             try {
                 if (!fields.name) {
-                    throw new Error('必须填写食品名称');
+                    throw new Error('必须填写商品名称');
                 } else if (!fields.image_path) {
-                    throw new Error('必须上传食品图片');
+                    throw new Error('必须上传商品图片');
                 } else if (!fields.specs.length) {
                     throw new Error('至少填写一种规格');
                 } else if (!fields.category_id) {
-                    throw new Error('食品类型ID错误');
+                    throw new Error('商品类型ID错误');
                 } else if (!fields.restaurant_id) {
-                    throw new Error('餐馆ID错误');
+                    throw new Error('卖家ID错误');
                 }
             } catch (err) {
                 console.log('前台参数错误', err.message);
@@ -164,11 +164,11 @@ class Food extends BaseComponent {
                 category = await modelShopFood.Menu.findOne({id: fields.category_id});
                 restaurant = await ShopModel.findOne({id: fields.restaurant_id});
             } catch (err) {
-                console.log('获取食品类型和餐馆信息失败');
+                console.log('获取商品类型和卖家信息失败');
                 res.send({
                     status: 0,
                     type: 'ERROR_DATA',
-                    message: '添加食品失败'
+                    message: '添加商品失败'
                 })
                 return
             }
@@ -180,7 +180,7 @@ class Food extends BaseComponent {
                 res.send({
                     status: 0,
                     type: 'ERROR_DATA',
-                    message: '添加食品失败'
+                    message: '添加商品失败'
                 })
                 return
             }
@@ -241,7 +241,7 @@ class Food extends BaseComponent {
                 res.send({
                     status: 0,
                     type: 'ERROR_DATA',
-                    message: '添加食品失败'
+                    message: '添加商品失败'
                 })
                 return
             }
@@ -252,14 +252,14 @@ class Food extends BaseComponent {
                 await category.save();
                 res.send({
                     status: 1,
-                    success: '添加食品成功',
+                    success: '添加商品成功',
                 });
             } catch (err) {
-                console.log('保存食品到数据库失败', err);
+                console.log('保存商品到数据库失败', err);
                 res.send({
                     status: 0,
                     type: 'ERROR_DATA',
-                    message: '添加食品失败'
+                    message: '添加商品失败'
                 })
             }
         })
@@ -393,11 +393,11 @@ class Food extends BaseComponent {
             const foods = await modelShopFood.Food.find(filter, '-_id').sort({item_id: -1}).limit(Number(limit)).skip(Number(offset));
             res.send(foods);
         } catch (err) {
-            console.log('获取食品数据失败', err);
+            console.log('获取商品数据失败', err);
             res.send({
                 status: 0,
                 type: 'GET_DATA_ERROR',
-                message: '获取食品数据失败'
+                message: '获取商品数据失败'
             })
         }
     }
@@ -429,7 +429,7 @@ class Food extends BaseComponent {
         const form = new formidable.IncomingForm();
         form.parse(req, async (err, fields, files) => {
             if (err) {
-                console.log('获取食品信息form出错', err);
+                console.log('获取商品信息出错', err);
                 res.send({
                     status: 0,
                     type: 'ERROR_FORM',
@@ -440,13 +440,13 @@ class Food extends BaseComponent {
             const {name, item_id, description = "", image_path, category_id, new_category_id} = fields;
             try {
                 if (!name) {
-                    throw new Error('食品名称错误');
+                    throw new Error('商品名称错误');
                 } else if (!item_id || !Number(item_id)) {
-                    throw new Error('食品ID错误');
+                    throw new Error('商品ID错误');
                 } else if (!category_id || !Number(category_id)) {
-                    throw new Error('食品分类ID错误');
+                    throw new Error('商品分类ID错误');
                 } else if (!image_path) {
-                    throw new Error('食品图片地址错误');
+                    throw new Error('商品图片地址错误');
                 }
                 const [specfoods, specifications] = await this.getSpecfoods(fields, item_id);
                 let newData;
@@ -476,14 +476,14 @@ class Food extends BaseComponent {
 
                 res.send({
                     status: 1,
-                    success: '修改食品信息成功',
+                    success: '修改商品信息成功',
                 })
             } catch (err) {
                 console.log(err.message, err);
                 res.send({
                     status: 0,
                     type: 'ERROR_UPDATE_FOOD',
-                    message: '更新食品信息失败',
+                    message: '更新商品信息失败',
                 })
             }
         })
@@ -510,14 +510,14 @@ class Food extends BaseComponent {
             await food.remove()
             res.send({
                 status: 1,
-                success: '删除食品成功',
+                success: '删除商品成功',
             })
         } catch (err) {
-            console.log('删除食品失败', err);
+            console.log('删除商品失败', err);
             res.send({
                 status: 0,
                 type: 'DELETE_FOOD_FAILED',
-                message: '删除食品失败',
+                message: '删除商品失败',
             })
         }
     }
